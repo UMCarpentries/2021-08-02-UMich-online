@@ -48,7 +48,7 @@ flavor: "r"
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "SWC Workshop (RNA-seq demystified prerequisite)"
+title: "UM SWC Carpentry Workshop: August 02-03, 2021"
 
 #------------------------------------------------------------
 # Pilot workshop settings (only relevant for lesson pilots).
@@ -108,7 +108,7 @@ instructor_post_survey: "https://www.surveymonkey.com/r/instructor_training_post
 
 
 # Start time in minutes (0 to be clock-independent, 540 to show a start at 09:00 am).
-start_time: 540
+start_time: 0
 
 # Specify that things in the episodes collection should be output.
 collections:
@@ -142,9 +142,6 @@ exclude:
   - Makefile
   - bin/
   - .Rproj.user/
-  - .vendor/
-  - vendor/
-  - .docker-vendor/
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
