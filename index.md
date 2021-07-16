@@ -3,21 +3,21 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "FIXME"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
+venue: "University of Michigan"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["instructor one", "instructor two"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+humandate: "Aug 2-3, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00am-4:30pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2021-08-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-08-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Dana King", "Jule Kruger", "Courtney Armour", "Sarah Lucas"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Raymond Cavalcante", "Travis Saari", "Becky Tagett", "Weisheng Wu", "Nick Carruthers"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["bioinformatics-workshops@umich.edu","damki@umich.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: "https://pad.carpentries.org/umichswc0803" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+eventbrite:   "163686301133"        # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -29,30 +29,6 @@ Edit the values in the block above to be appropriate for your workshop.
 If the value is not 'true', 'false', 'null', or a number, please use
 double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-{% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
-
-
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-remember to uncomment the `pilot_lesson_site`, `pilot_pre_survey`, and `pilot_post_survey`
-fields in `_config.yml`
-</div>
-
-{% comment %}
-8< ============================= until here ==================
 {% endcomment %}
 
 
@@ -325,27 +301,13 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% endif %}
 
 
-{% comment %}
+{{% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "pilot" %}
-<p><a href="{{ site.pilot_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.pilot_post_survey }}">Post-workshop Survey</a></p>
-{% elsif site.pilot_pre_survey or site.pilot_post_survey %}
-<div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured as a lesson pilot
-(the value of `site` is not set to `pilot` in `_config.yml`).
-Please comment out the `pilot_pre_survey` and `pilot_post_survey` fields
-in `_config.yml` or, if this workshop is a lesson pilot,
-change the value of `carpentry` to `pilot`.
-</div>
-{% else %}
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% endif %}
 
 <hr/>
 
@@ -380,17 +342,9 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
-{% elsif site.carpentry == "pilot" %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. If you would like to know the timing of these breaks in advance, please [contact the workshop organisers](#contact). For a list of lesson sections and estimated timings, [visit the lesson homepage]({{ site.lesson_site }}).
-{% comment %}
-Edit/replace the text above if you want to include a schedule table.
-See the contents of the _includes/custom-schedule.html file for an example of
-how one of these schedule tables is constructed.
-{% endcomment %}
 {% endif %}
 
 <hr/>
-
 
 {% comment %}
 SETUP
@@ -416,25 +370,42 @@ please preview your site before committing, and make sure to run
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  you will need to complete the Pre-workshop setup steps below.
+  In addition, you will need an up-to-date web browser (e.g. Chrome or Firefox).
+  You will not be able to participate in the workshop if you do not complete
+  these steps ahead of time.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+<p>
+  If you get stuck, <a href = "https://join.slack.com/t/umcoderspaces/signup">join the CoderSpaces Slack workspace</a>
+  and ask for help in the <a href = "https://umcoderspaces.slack.com/archives/C01GX4E85TJ">#install-party channel</a>.
+  We monitor that channel and will help you out as soon as we can!
+</p>
 
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
+<h3>Pre-workshop setup steps</h3>
 
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instrucctions.
-{% endcomment %}
+1. Install the following software (<a href="#install">all instructions are below</a>).
+    - Zoom (make sure you have the latest version)
+    - A Unix shell (e.g. bash, zsh)
+    - [git](https://git-scm.com/)
+    - [R](https://www.r-project.org/)
+    - [RStudio](https://rstudio.com/), an integrated development environment for R
+1. Create a [GitHub](https://github.com/) account if you do not already have one. You'll need to know the email associated with your account during the git lesson of the workshop.
+1. After you have installed everything above, download [un-report.zip](https://github.com/UMSWC/curriculum/raw/gh-pages/files/un-report.zip). You'll need the files included during the workshop.
+    1. Move `un-report.zip` to your Desktop and unzip it (usually double-clicking it will work).
+    1. Start up **RStudio**. In the upper left menu, select `File` > `Open`. In the window that opens, go to the `un-report/` folder on your Desktop and select the file `check_setup.R` to open it in RStudio.
+    1. Click the **`Source`** button to run the script. This script will make sure that everything is installed and setup correctly. You should see output printed to the console window (usually the lower left pane in RStudio).
+    1. Take a screenshot of (or copy & paste) the console output and send it via email to the lead instructor. Be sure to include the line starting with `source("` to the end. If everything worked, they'll give you the Zoom meeting ID for the workshop. Otherwise, they'll help you get everything setup correctly before giving you the Zoom ID.
+
+If at any point you get stuck or run into problems, please don't hesitate to ask us for help!
+
+
+<h2 id="install">Software Installation Instructions</h2>
+
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
@@ -450,8 +421,4 @@ during the workshop.
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
-{% elsif site.carpentry == "pilot" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
 {% endif %}
