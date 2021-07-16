@@ -17,7 +17,7 @@ instructor: ["Dana King", "Jule Kruger", "Courtney Armour", "Sarah Lucas"] # box
 helper: ["Raymond Cavalcante", "Travis Saari", "Becky Tagett", "Weisheng Wu", "Nick Carruthers"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["bioinformatics-workshops@umich.edu","damki@umich.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: "https://pad.carpentries.org/umichswc0803" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:   "163686301133"        # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -37,9 +37,9 @@ Check DC curriculum
 {% endcomment %}
 
 {% if site.carpentry == "dc" %}
-{% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
+{% unless site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
 <div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
+It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
 </div>
 {% endunless %}
 {% endif %}
@@ -259,6 +259,15 @@ Edit the text to match who can attend the workshop. For instance:
 </p>
 {% endcomment %}
 
+
+<p id="registration" align="center">
+  <strong>
+    <font size="36">
+    <a href="https://www.eventbrite.com/e/um-swc-carpentry-workshop-august-02-03-2021-tickets-163686301133" target="_blank">Click Here to Register</a>
+    </font>
+  </strong>
+</p>
+
 <hr/>
 
 {% comment%}
@@ -301,7 +310,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% endif %}
 
 
-{{% comment %}
+{% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
@@ -346,17 +355,6 @@ of code below the Schedule `<h2>` header below with
 
 <hr/>
 
-{% comment %}
-SETUP
-
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
-
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
 
 <h2 id="setup">Setup</h2>
 
