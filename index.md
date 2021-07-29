@@ -387,7 +387,7 @@ of code below the Schedule `<h2>` header below with
 <h3>Pre-workshop setup steps</h3>
 <div markdown="1">
 
-All installation steps are required prior to receiving workshop Zoom link/meeting ID. Installation will take approximately 20-30 minutes to complete. Help is available in the <a href = "https://umcoderspaces.slack.com/archives/C01GX4E85TJ">#install-party channel</a> or email (<a href='mailto:{{email}}'>{{email}}</a>) to set up a time for 1:1 installation troubleshooting.
+All installation steps are required prior to receiving workshop Zoom link/meeting ID. Installation will take approximately 20-30 minutes to complete. Help is available in the <a href = "https://umcoderspaces.slack.com/archives/C01GX4E85TJ">#install-party channel</a> or email (<a href='mailto:{{damki@umich.edu}}'>{{damki@umich.edu}}</a>) to set up a time for 1:1 installation troubleshooting.
 
 1. Install the following software (<a href="#install">all instructions are below</a>).
     - Zoom (make sure you have the latest version)
