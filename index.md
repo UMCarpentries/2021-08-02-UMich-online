@@ -387,7 +387,7 @@ of code below the Schedule `<h2>` header below with
 <h3>Pre-workshop setup steps</h3>
 <div markdown="1">
 
-All installation steps are required prior to receiving workshop Zoom link/meeting ID. Installation will take approximately 20-30 minutes to complete. Help is available in the <a href = "https://umcoderspaces.slack.com/archives/C01GX4E85TJ">#install-party channel</a> or email (<a href='mailto:{{damki@umich.edu}}'>{{damki@umich.edu}}</a>) to set up a time for 1:1 installation troubleshooting.
+All installation steps are required prior to receiving workshop Zoom link/meeting ID. Installation will take approximately 20-30 minutes to complete. Help is available in the <a href = "https://umcoderspaces.slack.com/archives/C01GX4E85TJ">#install-party channel</a> or email (damki@umich.edu) to set up a time for 1:1 installation troubleshooting.
 
 1. Install the following software (<a href="#install">all instructions are below</a>).
     - Zoom (make sure you have the latest version)
@@ -397,7 +397,7 @@ All installation steps are required prior to receiving workshop Zoom link/meetin
     - [RStudio](https://rstudio.com/), an integrated development environment for R
 1. Create a [GitHub](https://github.com/) account if you do not already have one. You'll need to know the email associated with your account during the git lesson of the workshop.
 1. After you have installed everything above, download [un-report.zip](https://github.com/UMSWC/curriculum/raw/gh-pages/files/un-report.zip). You'll need the files included during the workshop.
-    1. Move `un-report.zip` to your Desktop and unzip it (usually double-clicking it will work).
+    1. Move `un-report.zip` to your **Desktop** and unzip it (usually double-clicking it will work).
     1. Start up **RStudio**. In the upper left menu, select `File` > `Open`. In the window that opens, go to the `un-report/` folder on your Desktop and select the file `check_setup.R` to open it in RStudio.
     1. Click the **`Source`** button to run the script. This script will make sure that everything is installed and setup correctly. You should see output printed to the console window (usually the lower left pane in RStudio).
     1. Take a screenshot of (or copy & paste) the console output and send it via email to the lead instructor (<a href='mailto:{{email}}'>{{email}}</a>). Be sure to include the line starting with `source("` to the end.
