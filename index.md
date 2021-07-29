@@ -15,8 +15,8 @@ startdate: 2021-08-02      # machine-readable start date for the workshop in YYY
 enddate: 2021-08-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Dana King", "Jule Kruger", "Courtney Armour", "Sarah Lucas"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Raymond Cavalcante", "Travis Saari", "Becky Tagett", "Weisheng Wu", "Nick Carruthers"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["bioinformatics-workshops@umich.edu","damki@umich.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: "https://pad.carpentries.org/umichswc0803" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+email: ["damki@umich.edu", "bioinformatics-workshops@umich.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: "https://umcoderspaces.slack.com/archives/C02959BTBS9" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite: # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -304,7 +304,7 @@ available at https://codimd.carpentries.org
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+We will use this <a href="{{ page.collaborative_notes }}">Slack channel</a> within the UMCoderspaces Workspace for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 <hr/>
 {% endif %}
@@ -386,6 +386,9 @@ of code below the Schedule `<h2>` header below with
 
 <h3>Pre-workshop setup steps</h3>
 <div markdown="1">
+
+All installation steps are required prior to receiving workshop Zoom link/meeting ID. Installation will take approximately 20-30 minutes to complete. Help is available in the <a href = "https://umcoderspaces.slack.com/archives/C01GX4E85TJ">#install-party channel</a> or email (<a href='mailto:{{email}}'>{{email}}</a>) to set up a time for 1:1 installation troubleshooting.
+
 1. Install the following software (<a href="#install">all instructions are below</a>).
     - Zoom (make sure you have the latest version)
     - A Unix shell (e.g. bash, zsh)
@@ -397,7 +400,7 @@ of code below the Schedule `<h2>` header below with
     1. Move `un-report.zip` to your Desktop and unzip it (usually double-clicking it will work).
     1. Start up **RStudio**. In the upper left menu, select `File` > `Open`. In the window that opens, go to the `un-report/` folder on your Desktop and select the file `check_setup.R` to open it in RStudio.
     1. Click the **`Source`** button to run the script. This script will make sure that everything is installed and setup correctly. You should see output printed to the console window (usually the lower left pane in RStudio).
-    1. Take a screenshot of (or copy & paste) the console output and send it via email to the lead instructor. Be sure to include the line starting with `source("` to the end. If everything worked, they'll give you the Zoom meeting ID for the workshop. Otherwise, they'll help you get everything setup correctly before giving you the Zoom ID.
+    1. Take a screenshot of (or copy & paste) the console output and send it via email to the lead instructor (<a href='mailto:{{email}}'>{{email}}</a>). Be sure to include the line starting with `source("` to the end.
 </div>
 If at any point you get stuck or run into problems, please don't hesitate to ask us for help!
 
